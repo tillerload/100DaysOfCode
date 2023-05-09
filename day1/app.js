@@ -1,17 +1,21 @@
 const tipCalc = (total, percent) => {
   let actualPercent = percent * 0.01
   let tip = total * actualPercent
-  console.log(tip)
+  displayData(tip)
 }
 
 
-const btnClick = () => {
   document.getElementById('submitBtn').addEventListener('click', (e) => {
-    console.log('hi')
     e.preventDefault()
-    let total = document.getElementById('#total').value
-    let percent = document.getElementById('#percent').value
+    let total = document.getElementById('total').value
+    let percent = document.getElementById('percent').value
     tipCalc(total, percent)
   })
   
+const displayData = (tip) => {
+
+  let tipOwed = document.createElement('p')
+  tipOwed.innerText = tip
+
+  document.getElementById('tipOwedSection').append(tipOwed)
 }
