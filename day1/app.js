@@ -1,14 +1,16 @@
 const tipCalc = (total, percent) => {
-  let tip = total * percent
+  let actualPercent = percent * 0.01
+  let tip = total * actualPercent
   console.log(tip)
 }
 
 
 const btnClick = () => {
-  document.querySelector('form').addEventListener('submit', (e) => {
+  document.getElementById('submitBtn').addEventListener('click', (e) => {
+    console.log('hi')
     e.preventDefault()
-    let total = document.querySelector('#total').value
-    let percent = document.querySelector('#percent').value
+    let total = document.getElementById('#total').value
+    let percent = document.getElementById('#percent').value
     tipCalc(total, percent)
   })
   
