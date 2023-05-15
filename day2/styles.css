@@ -10,33 +10,16 @@ html {
   text-align: center;
 }
 
+header {
+  margin-top: 200px;
+  text-align: center;
+}
+
 .btn {
-  width: 60px;
-  height: 30px;
+  width: 120px;
+  height: 40px;
   margin: 0 10px;
   border: black solid 2px;
 }
 
-.btn1 {
-  background-color: red;
-}
 
-.btn2 {
-  background-color: orange;
-}
-
-.btn3 {
-  background-color: yellow;
-}
-
-.btn4 {
-  background-color: green;
-}
-
-.btn5 {
-  background-color: blue;
-}
-
-.btn6 {
-  background-color: purple;
-}
